@@ -1,6 +1,63 @@
 // src/App.js
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
+
+function GenButton() {
+  const [loading, setLoading] = useState(false);
+  const [text, setText] = useState('');
+  const [grayScale, setGrayScale] = useState(0);
+  const [blur, setBlur] = useState(0);
+  const [brightness, setBrightness] = useState(1);
+
+  const handleGenClick = () => {
+    setLoading(true);
+    setTimeout(() => {
+      if (text.includes("gray")) {
+        setGrayScale(Math.random()*25+50);
+        console.log("gray");
+      }
+      if (text.includes("blur")) {
+        setBlur(Math.random()*2+0.5);
+      }
+      if (text.includes("bright")) {
+        setBrightness(Math.random()/2 + 1);
+      }
+      setLoading(false);
+    }, Math.floor(Math.random() * 2000) + 1000);
+  }
+
+  const handleResetClick = () => {
+    setGrayScale(0);
+    setBrightness(1);
+    setBlur(0);
+  }
+  return (<>
+    <div style={{ display: 'grid', justifyContent: 'center', flexDirection: 'column', gap: '10px' }}>
+      <img src="terminator-future-movies.jpg" alt='terminator thing' style={{ width: '500px', 
+        filter: `grayscale(${grayScale}%) blur(${blur}px) brightness(${brightness})`}}/>
+      <input
+        type="text"
+        value={text}
+        disabled={loading}
+        onChange={e => setText(e.target.value)}
+        placeholder="Type something..."
+        style={{
+          padding: '8px',
+          borderRadius: '5px',
+          border: '1px solid #ccc',
+          fontSize: '16px',
+        }}
+      />
+      <>{loading ? (
+        <p>Loading...</p>
+      ) : (
+        <button className="gen-button" onClick={handleGenClick}>Generate</button>
+      )}</>
+      <button className="cta-button" disabled={loading} onClick={handleResetClick}>Reset</button>
+    </div>
+    </>
+  );
+}
 
 function App() {
   return (
@@ -32,6 +89,7 @@ function App() {
         <section id="before-after" className="section before-after">
           <h2>Before-and-After</h2>
           <p>Check out how AI can transform your photos in seconds.</p>
+          <GenButton />
           {/* Later, add interactive sliders or image comparisons here */}
         </section>
 
