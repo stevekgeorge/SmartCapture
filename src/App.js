@@ -90,7 +90,7 @@ function App() {
           <h2>Before-and-After</h2>
           <p>Check out how AI can transform your photos in seconds.</p>
           <GenButton />
-          <body>
+          <div>
             <br />
             1. Generative AI systems can be accessed through text prompts. Try writing a text prompt in the box <br />
             where it says <i> Type something...</i> and hit Generate.
@@ -110,7 +110,7 @@ function App() {
             4. Awesome. Now let's try a different <i> mood</i>. Let's try a different tool, called blur. Try prompting the textbox <br />
             to blur the image, making sure to use the keyword 'blur'. This tool is useful for bringing other parts of the image into <br />
             focus or for privacy reasons.
-          </body>
+          </div>
           {/* Later, add interactive sliders or image comparisons here */}
         </section>
 
