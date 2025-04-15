@@ -1,7 +1,6 @@
 {
   "name": "smartcapture",
-  "version": "0.1.0",
-  "homepage": "https://stevekgeorge.github.io/SmartCapture",  
+  "version": "0.1.0", 
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
@@ -17,7 +16,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "PUBLIC_URL=https://stevekgeorge.github.io/SmartCapture react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
