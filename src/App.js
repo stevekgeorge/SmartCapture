@@ -34,7 +34,7 @@ function GenButton() {
   }
   return (<>
     <div style={{ display: 'grid', justifyContent: 'center', flexDirection: 'column', gap: '10px' }}>
-      <img src="terminator-future-movies.jpg" alt='terminator thing' style={{ width: '500px', 
+      <img src="https://stevekgeorge.github.io/SmartCapture/terminator-future-movies.jpg" alt='terminator thing' style={{ width: '500px', 
         filter: `grayscale(${grayScale}%) blur(${blur}px) brightness(${brightness})`}}/>
       <input
         type="text"
@@ -219,7 +219,7 @@ function App() {
       <div className="App">
         {/* Navigation Bar */}
         <nav className="navbar">
-        <Link to="/SmartCapture"><div className="logo">SmartCapture</div></Link>
+        <Link to="/SmartCapture/"><div className="logo">SmartCapture</div></Link>
           <ul className="nav-links">
             <li><Link to="/before-after">Before-and-After</Link></li>
             <li><Link to="/video-tutorials">Video Tutorials</Link></li>
@@ -230,6 +230,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/SmartCapture" element={<Home />} />
+          <Route path="/SmartCapture/" element={<Home />} />
           <Route path="/before-after" element={<BeforeAndAfter />} />
           <Route path="/video-tutorials" element={<VideoTutorials />} />
           <Route path="/use-cases" element={<UseCases />} />
