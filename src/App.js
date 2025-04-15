@@ -139,7 +139,7 @@ function App() {
           <h2>Ethics & Transparency</h2>
           <p>Discover how to use AI responsibly and keep your photos honest and fair.</p>
           <br /> 
-          <body> 
+          <div> 
             Generative AI is just another tool in your overall toolkit as a professional photographer. Part of being <br /> 
             technologically literate comes with the responsbility of knowing <i>how</i> to use AI. AI should never be <br />
             the only tool that is used in professional photography-- you are the photographer, not the AI! It should <br />
@@ -148,7 +148,7 @@ function App() {
             did come from the model, it is good practice to credit the AI model as part of your workflow. <br />
             <br />
             Now that you are a AI savvy photographer, go ahead and revolutionize your business!
-            </body>
+            </div>
         </section>
       </main>
 
