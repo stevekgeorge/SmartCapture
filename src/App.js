@@ -79,7 +79,7 @@ function App() {
       <header className="hero-section">
         <div className="hero-content">
           <h1>Master AI Photography Ethically & Creatively</h1>
-          <p>Explore interactive before-and-after sliders, video tutorials, AI use cases, and more.</p>
+          <p>Explore interactive before-and-after sliders, tutorials, AI use cases, and more.</p>
           <button className="cta-button">Start Learning</button>
         </div>
       </header>
@@ -90,6 +90,27 @@ function App() {
           <h2>Before-and-After</h2>
           <p>Check out how AI can transform your photos in seconds.</p>
           <GenButton />
+          <body>
+            <br />
+            1. Generative AI systems can be accessed through text prompts. Try writing a text prompt in the box <br />
+            where it says <i> Type something...</i> and hit Generate.
+            <br /> <br />
+            2. Good! Text prompts are now you are able to talk to the AI system. Depending on the AI, there can be a <br />
+            chatbox or an image generator option. Chatboxes will respond back to you in words while image geneartors will <br />
+            generate one or more images based off of keywords in your prompt. Make sure your prompts are clear to get the <br />
+            best results. 
+            <br/> <br />
+            Now, let's try editing the image. Depending on the image's <i> mood</i>, we want different levels of contrast, <br />
+            saturation, and hue. Try prompting the textbox to make the image brighter, making sure to use the keyword 'bright' <br />
+            so that the text prompt is clear.
+            <br/> <br />
+            3. Great! You can reset the changes created at anytime by pressing the Reset button. Try resetting the editing to <br />
+            the original settings by pressing this button.
+            <br/> <br />
+            4. Awesome. Now let's try a different <i> mood</i>. Let's try a different tool, called blur. Try prompting the textbox <br />
+            to blur the image, making sure to use the keyword 'blur'. This tool is useful for bringing other parts of the image into <br />
+            focus or for privacy reasons.
+          </body>
           {/* Later, add interactive sliders or image comparisons here */}
         </section>
 
@@ -117,6 +138,17 @@ function App() {
         <section id="ethics-transparency" className="section ethics-transparency">
           <h2>Ethics & Transparency</h2>
           <p>Discover how to use AI responsibly and keep your photos honest and fair.</p>
+          <br /> 
+          <body> 
+            Generative AI is just another tool in your overall toolkit as a professional photographer. Part of being <br /> 
+            technologically literate comes with the responsbility of knowing <i>how</i> to use AI. AI should never be <br />
+            the only tool that is used in professional photography-- you are the photographer, not the AI! It should <br />
+            be a part of the editing process and not the entire process itself. Since generative AI is able to come up <br />
+            with new ideas that weren't necessarily from you, if a large enough chunk of the creative content <br />
+            did come from the model, it is good practice to credit the AI model as part of your workflow. <br />
+            <br />
+            Now that you are a AI savvy photographer, go ahead and revolutionize your business!
+            </body>
         </section>
       </main>
 
