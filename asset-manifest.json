@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "https://stevekgeorge.github.io/SmartCapture/static/css/main.2af52a97.css",
-    "main.js": "https://stevekgeorge.github.io/SmartCapture/static/js/main.d84dd99e.js",
+    "main.css": "https://stevekgeorge.github.io/SmartCapture/static/css/main.f50419d7.css",
+    "main.js": "https://stevekgeorge.github.io/SmartCapture/static/js/main.d15faea0.js",
     "static/js/453.571721ab.chunk.js": "https://stevekgeorge.github.io/SmartCapture/static/js/453.571721ab.chunk.js",
     "index.html": "https://stevekgeorge.github.io/SmartCapture/index.html",
-    "main.2af52a97.css.map": "https://stevekgeorge.github.io/SmartCapture/static/css/main.2af52a97.css.map",
-    "main.d84dd99e.js.map": "https://stevekgeorge.github.io/SmartCapture/static/js/main.d84dd99e.js.map",
+    "main.f50419d7.css.map": "https://stevekgeorge.github.io/SmartCapture/static/css/main.f50419d7.css.map",
+    "main.d15faea0.js.map": "https://stevekgeorge.github.io/SmartCapture/static/js/main.d15faea0.js.map",
     "453.571721ab.chunk.js.map": "https://stevekgeorge.github.io/SmartCapture/static/js/453.571721ab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2af52a97.css",
-    "static/js/main.d84dd99e.js"
+    "static/css/main.f50419d7.css",
+    "static/js/main.d15faea0.js"
   ]
 }
