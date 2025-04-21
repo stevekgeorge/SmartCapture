@@ -179,3 +179,15 @@ body {
   font-style: italic;
 }
 
+.importance h2,
+.ethics h2 {
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.importance p,
+.ethics p {
+  line-height: 1.5;
+  max-width: 700px;
+  margin: 0 auto;
+}
