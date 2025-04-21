@@ -131,14 +131,14 @@ function BeforeAndAfter() {
         <div>
           <br />
           1. Generative AI systems can be accessed through text prompts. Try writing a text prompt in the box <br />
-          where it says <i> Type something...</i> and hit Generate.
+          where it says <i> Type something...</i> and hit Generate. The image might not change, but that's okay. <br />
           <br /> <br />
-          2. Good! Text prompts are now you are able to talk to the AI system. Depending on the AI, there can be a <br />
-          chatbox or an image generator option. Chatboxes will respond back to you in words while image geneartors will <br />
+          Text prompts are now you are able to talk to the AI system. Depending on the AI, there can be a <br />
+          chatbox or an image generator option. Chatboxes will respond back to you in words while image generators will <br />
           generate one or more images based off of keywords in your prompt. Make sure your prompts are clear to get the <br />
-          best results. 
+          best results. For this example, there is no text output.
           <br/> <br />
-          Now, let's try editing the image. Depending on the image's <i> mood</i>, we want different levels of contrast, <br />
+          2. Now, let's try editing the image. Depending on the image's <i> mood</i>, we want different levels of contrast, <br />
           saturation, and hue. Try prompting the textbox to make the image brighter, making sure to use the keyword 'bright' <br />
           so that the text prompt is clear.
           <br/> <br />
@@ -148,6 +148,14 @@ function BeforeAndAfter() {
           4. Awesome. Now let's try a different <i> mood</i>. Let's try a different tool, called blur. Try prompting the textbox <br />
           to blur the image, making sure to use the keyword 'blur'. This tool is useful for bringing other parts of the image into <br />
           focus or for privacy reasons.
+          <br/> <br />
+          5. Now you know that keywords are important to communicate with any text-based AI. Regenerating images and edits multiple <br />
+          times to try different ideas provides the most robust way to edit. Let's reset the image and try one more keyword: making the <br />
+          image <i>gray</i>.
+          <br /> <br />
+          That's it for your first tutorial on how to use a generative AI model using text prompts! With a simple keyword such as <br />
+          bright or gray, an image can be edited within seconds. Be sure to check out other tutorials under <i> Video Tutorials </i> for <br />
+          more detailed examples on how to use AI technology for your photography.
         </div>
         {/* Later, add interactive sliders or image comparisons here */}
       </section>
@@ -238,7 +246,17 @@ function EthicsTransparency() {
           be a part of the editing process and not the entire process itself. Since generative AI is able to come up <br />
           with new ideas that weren't necessarily from you, if a large enough chunk of the creative content <br />
           did come from the model, it is good practice to credit the AI model as part of your workflow. <br />
-          <br />
+          <br /> <br />
+          AI tools are not impartial to bias. The tools may be biased on certain features, beauty filters, and enchancements <br />
+          from the dataset that it was trained on. The best way to combat these unintended biases is to test your tools on a  <br />
+          a variety of different subjects, so that you are able to notice any biased editing during your work. AI is not always <br />
+          better than your personal vision, or your impartial editor. Exercise caution!
+          <br /> <br />
+          If you are editing people, make sure to receive clear consent from them if you are using AI to modify <br />
+          their appearance in a significant way. Deepfakes are when people are edited to look like other people, and this <br />
+          sort of editing is made more accessible with AI -- exercise courtsey and professionalism in these scenarios. It is <br />
+          always the case that people should be consenting to your edits. Be transparent and specific about AI usage by stating <br />
+          which aspects of your photo were AI-enhanced.           <br /> <br />
           Now that you are a AI savvy photographer, go ahead and revolutionize your business!
           </div>
       </section>
