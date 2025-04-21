@@ -169,16 +169,62 @@ function BeforeAndAfter() {
 }
 
 function VideoTutorials() {
-  return (<>
-    {/* Main Content */}
+  const videos = [
+    {
+      id: '-2v-VFi_6WU',
+      title: 'Luminar Neo: The Ultimate AI Photo Editor Ever?',
+      before: 'We kick things off by exploring Luminar Neo: a powerful AI‑driven editor that promises professional results with just a few clicks. Watch to see how its AI masking and relighting tools handle complex edits in seconds.',
+      after: 'As you saw, Luminar Neo excels at auto‑selecting tricky edges and rebalancing light. If you need a one‑stop AI editor for rapid enhancements, this one’s a no‑brainer.',
+    },
+    {
+      id: 'neuvkdCLWEk',
+      title: 'How To Use Playground AI Step by Step | FULL TUTORIAL',
+      before: 'Our next walkthrough takes us into Playground AI, where you’ll learn from scratch how to generate and refine images using its simple prompt‑based interface.',
+      after: 'Playground AI’s intuitive layout and powerful customization options let you go from blank canvas to stunning AI art in minutes.',
+    },
+    {
+      id: 'Dk1TxDKzb68',
+      title: 'Descript AI Video Editing Tutorial',
+      before: 'Lastly, we explore Descript, a revolutionary video editor that treats your transcript like a document. Watch how editing text reshapes your video in real time.',
+      after: 'Descript’s text‑based workflow combined with features like auto‑captioning and Overdub makes editing faster than ever. It’s perfect for creators who want speed without sacrificing control.',
+    },
+  ];
+
+  return (
     <main>
-    <section id="video-tutorials" className="section video-tutorials">
+      <section id="video-tutorials" className="section video-tutorials">
         <h2>Video Tutorials</h2>
-        <p>Watch short videos on AI editing, popular tools, and ethical AI practices.</p>
-        {/* Thumbnails or embedded videos can go here */}
+        <p>
+          Dive into our curated selection of quick lessons! Learn how to edit
+          with AI, explore the hottest tools on the market, and get tips for
+          using AI effectively in your photography workflow.
+        </p>
+
+        <div className="video-grid">
+          {videos.map(({ id, title, before, after }) => (
+            <div className="video-item" key={id}>
+              <p className="video-blurb before">{before}</p>
+
+              <div className="video-container">
+                <iframe
+                  src={`https://www.youtube.com/embed/${id}`}
+                  title={title}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+
+              <p className="video-blurb after">{after}</p>
+            </div>
+          ))}
+        </div>
       </section>
-    </main></>);
+    </main>
+  );
 }
+
+
 
 function UseCases() {
   return (<>
