@@ -232,31 +232,85 @@ function UseCases() {
 }
 
 function EthicsTransparency() {
-  return (<>
+  const [answers, setAnswers] = useState([null, null, null]);
+  const [feedback, setFeedback] = useState(["", "", ""]);
+
+  const handleAnswer = (questionIndex, selectedAnswer) => {
+    const correctAnswers = ["c", "b", "a"];
+    const newAnswers = [...answers];
+    const newFeedback = [...feedback];
+
+    newAnswers[questionIndex] = selectedAnswer;
+    newFeedback[questionIndex] =
+      selectedAnswer === correctAnswers[questionIndex]
+        ? "✅ Correct!"
+        : "❌ Not quite. Try again or review the material above.";
+
+    setAnswers(newAnswers);
+    setFeedback(newFeedback);
+  };
+
+  return (
+    <>
     {/* Main Content */}
     <main>
     <section id="ethics-transparency" className="section ethics-transparency">
-        <h2>Ethics & Transparency</h2>
+      <h2> Ethics in AI Photography </h2>
+        <br />
         <p>Discover how to use AI responsibly and keep your photos honest and fair.</p>
         <br /> 
-        <div> 
+        <div>
           Generative AI is just another tool in your overall toolkit as a professional photographer. Part of being <br /> 
           technologically literate comes with the responsbility of knowing <i>how</i> to use AI. AI should never be <br />
           the only tool that is used in professional photography-- you are the photographer, not the AI! It should <br />
-          be a part of the editing process and not the entire process itself. Since generative AI is able to come up <br />
-          with new ideas that weren't necessarily from you, if a large enough chunk of the creative content <br />
-          did come from the model, it is good practice to credit the AI model as part of your workflow. <br />
+          be a part of the editing process and not the entire process itself. Other than that, there are 4 main considerations<br />
+          regarding ethics with AI photography.<br />
+          <br /><br />
+          1. <u>Transparency</u>: Since generative AI is able to come up with new ideas that weren't necessarily from you, if a large enough chunk of the <br />
+          creative content did come from the model, it is good practice to credit the AI model as part of your workflow. Overall, <br />
+          Be transparent and specific about AI usage by stating which aspects of your photo were AI-enhanced.<br />
           <br /> <br />
-          AI tools are not impartial to bias. The tools may be biased on certain features, beauty filters, and enchancements <br />
+          2. <u>Bias</u>: AI tools are not impartial to bias. The tools may be biased on certain features, beauty filters, and enchancements <br />
           from the dataset that it was trained on. The best way to combat these unintended biases is to test your tools on a  <br />
           a variety of different subjects, so that you are able to notice any biased editing during your work. AI is not always <br />
           better than your personal vision, or your impartial editor. Exercise caution!
           <br /> <br />
-          If you are editing people, make sure to receive clear consent from them if you are using AI to modify <br />
+          3. <u>Consent</u>: If you are editing people, make sure to receive clear consent from them if you are using AI to modify <br />
           their appearance in a significant way. Deepfakes are when people are edited to look like other people, and this <br />
           sort of editing is made more accessible with AI -- exercise courtsey and professionalism in these scenarios. It is <br />
-          always the case that people should be consenting to your edits. Be transparent and specific about AI usage by stating <br />
-          which aspects of your photo were AI-enhanced.           <br /> <br />
+          always the case that people should be consenting to your edits. <br />
+          <br /> <br />
+          4. <u>Misinformation</u>: Don't use AI to misrepresent people, events, or products. This goes hand and hand with transparency, <br />
+          as false advertisement and false subject representation can deeply affect public perception of individuals or communities. <br />
+          <br /><br />
+          <div style={{ backgroundColor: "#FD3F6C", padding: "1rem", borderRadius: "7px", maxWidth: "700px", margin: "0 auto",}}>
+  <h2 style={{ color: "white", margin: 0 }}>Test your Knowledge!</h2> </div> <br /> <br />
+          <div>
+          <p><strong>1. You have used AI tools to touch up a photograph by enhancing the sky and remove some undesired parts from the background of the image. You then
+            submit this photograph with the edits to a photography contest. What should you do, given the transparency consideration? </strong></p>
+            <br /> 
+              <label><input type="radio" name="q1" onChange={() => handleAnswer(0, "a")} /> Keep quiet since AI usage is not a big deal</label><br /> 
+              <label><input type="radio" name="q1" onChange={() => handleAnswer(0, "b")} /> Only mention it if you win the contest</label><br /> 
+              <label><input type="radio" name="q1" onChange={() => handleAnswer(0, "c")} /> Be clear about how you used AI-assistance in your photograph</label><br /> 
+              <p>{feedback[0]}</p>
+          <br /> <br />
+          <p><strong> 2. You are using an AI editor for some cosmetic touch ups for people in your photograph. You noticed that as you wre prompting the tool to make 
+            the subject appear more professional, the tool has lightened the subject's skin. How best should you proceed, given the bias consideration? </strong></p>
+            <br />
+              <label><input type="radio" name="q2" onChange={() => handleAnswer(1, "a")} /> Keep the tool's changes </label><br /> 
+              <label><input type="radio" name="q2" onChange={() => handleAnswer(1, "b")} /> Test the tool on a variety of different subjects, and adjust your process depending on the outcome </label><br /> 
+              <label><input type="radio" name="q2" onChange={() => handleAnswer(1, "c")} /> Since the tool is biased on skin tone, only use it for light skinned subjects </label><br /> 
+              <p>{feedback[1]}</p>
+          <br /><br />
+          <p><strong>3. You have been approached by a client to use AI editing software to develop a deepfake of another person. Given the consent and misinformation considerations, how
+            best should you proceed? </strong></p>
+            <br />
+              <label><input type="radio" name="q3" onChange={() => handleAnswer(2, "a")} /> Deepfakes violate consent in this scenario, so refuse the work </label><br /> 
+              <label><input type="radio" name="q3" onChange={() => handleAnswer(2, "b")} /> Agree to the work, since the client knows best </label><br /> 
+              <label><input type="radio" name="q3" onChange={() => handleAnswer(2, "c")} /> Agree to the work, but only use traditional editing techniques and not AI </label><br /> 
+              <p>{feedback[2]}</p>
+          </div>
+          <br /><br />
           Now that you are a AI savvy photographer, go ahead and revolutionize your business!
           </div>
       </section>
