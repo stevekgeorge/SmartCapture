@@ -89,7 +89,7 @@ function Home() {
             explore real use cases, and pick up best practices for honest AI
             edits.
           </p>
-        <img src="https://stevekgeorge.github.io/SmartCapture/logo.png" alt="logo" style={{ width: '200px', borderRadius: '12px', marginTop: '1rem', marginBottom: '1rem', margin: 'auto'}} />
+        <img src="https://stevekgeorge.github.io/SmartCapture/logo.png" alt="logo" style={{ width: '400px', borderRadius: '12px', marginTop: '100px', margin: 'auto'}} />
 
         </section>
 
