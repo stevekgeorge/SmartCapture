@@ -91,6 +91,9 @@ function Home() {
           </p>
         </section>
 
+        <img src="https://stevekgeorge.github.io/SmartCapture/logo.png" alt="logo" style={{ width: '100%', borderRadius: '12px', marginTop: '1rem' }} />
+        
+
         {/* Importance */}
         <section className="section importance">
           <h2>Why AI in Photography Matters</h2>
@@ -102,6 +105,9 @@ function Home() {
             still get to call the shots.
           </p>
         </section>
+
+        <img src="https://stevekgeorge.github.io/SmartCapture/robot.png" alt="robot" style={{ width: '100%', borderRadius: '12px', marginTop: '1rem' }} />
+
 
         {/* Ethical Implications */}
         <section className="section ethics">
@@ -325,6 +331,8 @@ function EthicsTransparency() {
     <main>
     <section id="ethics-transparency" className="section ethics-transparency">
       <h2> Ethics in AI Photography </h2>
+      <img src="https://stevekgeorge.github.io/SmartCapture/ethics1.jpg" alt="ethics" style={{ width: '100%', borderRadius: '12px', marginTop: '1rem' }} />
+
         <br />
         <p>Discover how to use AI responsibly and keep your photos honest and fair.</p>
         <br /> 
@@ -353,6 +361,8 @@ function EthicsTransparency() {
           as false advertisement and false subject representation can deeply affect public perception of individuals or communities. <br />
           <br /><br />
           <div style={{ backgroundColor: "#FD3F6C", padding: "1rem", borderRadius: "7px", maxWidth: "700px", margin: "0 auto",}}>
+          <img src="https://stevekgeorge.github.io/SmartCapture/quiztime.jpg" alt="quiztimes" style={{ width: '100%', borderRadius: '12px', marginTop: '1rem' }} />
+  
   <h2 style={{ color: "white", margin: 0 }}>Test your Knowledge!</h2> </div> <br /> <br />
           <div>
           <p><strong>1. You have used AI tools to touch up a photograph by enhancing the sky and remove some undesired parts from the background of the image. You then
