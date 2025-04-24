@@ -243,7 +243,7 @@ function UseCases() {
         <div className="video-grid" style={{ marginTop: '2rem' }}>
           <div className="video-item">
             <h3>✨ Wedding Photo Cleanup</h3>
-            <img src="/wedding.jpg" alt="Wedding Photo Cleanup" style={{ width: '100%', borderRadius: '12px', marginTop: '1rem' }} />
+            <img src="SmartCapture/wedding.jpg" alt="Wedding Photo Cleanup" style={{ width: '100%', borderRadius: '12px', marginTop: '1rem' }} />
             <p>
               AI tools can quickly remove distractions like photobombers or power lines in outdoor wedding shots.
               This saves hours in post-production and helps meet tight delivery deadlines.
@@ -251,7 +251,7 @@ function UseCases() {
           </div>
           <div className="video-item">
             <h3>🎨 AI Styling for Brand Shoots</h3>
-            <img src="/fashion.jpeg" alt="Brand Shoot Image" style={{ width: '100%', borderRadius: '12px', marginTop: '1rem' }} />
+            <img src="SmartCapture/fashion.jpeg" alt="Brand Shoot Image" style={{ width: '100%', borderRadius: '12px', marginTop: '1rem' }} />
             <p>
               Photographers working with fashion or product brands use AI to generate different visual styles from
               the same shoot—helping clients decide faster.
@@ -259,14 +259,14 @@ function UseCases() {
           </div>
           <div className="video-item">
             <h3>🧪 Quick A/B Testing</h3>
-            <img src="/ad.jpeg" alt="Advertisement Image" style={{ width: '100%', borderRadius: '12px', marginTop: '1rem' }} />
+            <img src="SmartCapture/ad.jpeg" alt="Advertisement Image" style={{ width: '100%', borderRadius: '12px', marginTop: '1rem' }} />
             <p>
               For social media or ads, photographers create multiple image versions with subtle AI tweaks. Test what works—fast.
             </p>
           </div>
           <div className="video-item">
             <h3>🌅 Landscape Enhancement</h3>
-            <img src="/landscape.jpeg" alt="Landscape Image" style={{ width: '100%', borderRadius: '12px', marginTop: '1rem' }} />
+            <img src="SmartCapture/landscape.jpeg" alt="Landscape Image" style={{ width: '100%', borderRadius: '12px', marginTop: '1rem' }} />
             <p>
               Travel photographers enhance skies and water reflections with AI filters. Flat lighting? Fixed in seconds.
             </p>
