@@ -89,9 +89,10 @@ function Home() {
             explore real use cases, and pick up best practices for honest AI
             edits.
           </p>
+        <img src="https://stevekgeorge.github.io/SmartCapture/logo.png" alt="logo" style={{ width: '500px', borderRadius: '12px', marginTop: '1rem', marginBottom: '1rem', margin: 'auto'}} />
+
         </section>
 
-        <img src="https://stevekgeorge.github.io/SmartCapture/logo.png" alt="logo" style={{ width: '500px', borderRadius: '12px', marginTop: '1rem', marginBottom: '1rem', margin: 'auto'}} />
         
 
         {/* Importance */}
@@ -104,9 +105,10 @@ function Home() {
             new to editing, AI tools help you get pro‑level results fast—and you
             still get to call the shots.
           </p>
+        <img src="https://stevekgeorge.github.io/SmartCapture/robot.png" alt="robot" style={{ width: '500px', borderRadius: '12px', marginTop: '1rem', marginBottom: '1rem', margin: 'auto' }} />
+
         </section>
 
-        <img src="https://stevekgeorge.github.io/SmartCapture/robot.png" alt="robot" style={{ width: '500px', borderRadius: '12px', marginTop: '1rem', marginBottom: '1rem', margin: 'auto' }} />
 
 
         {/* Ethical Implications */}
