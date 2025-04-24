@@ -220,15 +220,80 @@ function VideoTutorials() {
 
 
 
+// function UseCases() {
+//   return (<>
+//     {/* Main Content */}
+//     <main>
+//     <section id="use-cases" className="section use-cases">
+//         <h2>Use Cases</h2>
+//         <p>See how photographers are using AI to speed up workflows and try new creative ideas.</p>
+//       </section>
+//     </main></>);
+// }
+
 function UseCases() {
-  return (<>
-    {/* Main Content */}
+  return (
     <main>
-    <section id="use-cases" className="section use-cases">
-        <h2>Use Cases</h2>
-        <p>See how photographers are using AI to speed up workflows and try new creative ideas.</p>
+      <section id="use-cases" className="section use-cases">
+        <h2>Real-World Use Cases of AI in Photography</h2>
+        <p>
+          Explore how photographers—from hobbyists to pros—are using AI tools to level up their craft.
+        </p>
+
+        <div className="video-grid" style={{ marginTop: '2rem' }}>
+          <div className="video-item">
+            <h3>✨ Wedding Photo Cleanup</h3>
+            <p>
+              AI tools can quickly remove distractions like photobombers or power lines in outdoor wedding shots.
+              This saves hours in post-production and helps meet tight delivery deadlines.
+            </p>
+          </div>
+          <div className="video-item">
+            <h3>🎨 AI Styling for Brand Shoots</h3>
+            <p>
+              Photographers working with fashion or product brands use AI to generate different visual styles from
+              the same shoot—helping clients decide faster.
+            </p>
+          </div>
+          <div className="video-item">
+            <h3>🧪 Quick A/B Testing</h3>
+            <p>
+              For social media or ads, photographers create multiple image versions with subtle AI tweaks. Test what works—fast.
+            </p>
+          </div>
+          <div className="video-item">
+            <h3>🌅 Landscape Enhancement</h3>
+            <p>
+              Travel photographers enhance skies and water reflections with AI filters. Flat lighting? Fixed in seconds.
+            </p>
+          </div>
+        </div>
+
+        <div
+          style={{
+            backgroundColor: "#005F73",
+            color: "#ffffff",
+            padding: "1rem",
+            borderRadius: "7px",
+            maxWidth: "700px",
+            margin: "3rem auto 1rem auto",
+            lineHeight: "1.5",
+            textAlign: "center",
+          }}
+        >
+          <h3 style={{ marginTop: 0 }}>🚀 Pro Tip</h3>
+          <p style={{ color: "#e0f7fa" }}>
+            Combine traditional editing with AI for the best results. Use AI to speed up the repetitive parts,
+            then fine-tune the rest to match your personal style.
+          </p>
+        </div>
+
+        <p>
+          Want more inspiration? Jump to our <Link to="/video-tutorials">Video Tutorials</Link> for hands-on walkthroughs.
+        </p>
       </section>
-    </main></>);
+    </main>
+  );
 }
 
 function EthicsTransparency() {
