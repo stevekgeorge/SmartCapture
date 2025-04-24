@@ -91,7 +91,7 @@ function Home() {
           </p>
         </section>
 
-        <img src="https://stevekgeorge.github.io/SmartCapture/logo.png" alt="logo" style={{ width: '500px', borderRadius: '12px', marginTop: '1rem' }} />
+        <img src="https://stevekgeorge.github.io/SmartCapture/logo.png" alt="logo" style={{ width: '500px', borderRadius: '12px', marginTop: '1rem', marginBottom: '1rem', margin: auto}} />
         
 
         {/* Importance */}
@@ -106,7 +106,7 @@ function Home() {
           </p>
         </section>
 
-        <img src="https://stevekgeorge.github.io/SmartCapture/robot.png" alt="robot" style={{ width: '500px', borderRadius: '12px', marginTop: '1rem' }} />
+        <img src="https://stevekgeorge.github.io/SmartCapture/robot.png" alt="robot" style={{ width: '500px', borderRadius: '12px', marginTop: '1rem', marginBottom: '1rem', margin: auto }} />
 
 
         {/* Ethical Implications */}
@@ -331,7 +331,7 @@ function EthicsTransparency() {
     <main>
     <section id="ethics-transparency" className="section ethics-transparency">
       <h2> Ethics in AI Photography </h2>
-      <img src="https://stevekgeorge.github.io/SmartCapture/ethics1.jpg" alt="ethics" style={{ width: '500px', borderRadius: '12px', marginTop: '1rem' }} />
+      <img src="https://stevekgeorge.github.io/SmartCapture/ethics1.jpg" alt="ethics" style={{ width: '500px', borderRadius: '12px', marginTop: '1rem', marginBottom: '1rem', margin: auto }} />
 
         <br />
         <p>Discover how to use AI responsibly and keep your photos honest and fair.</p>
